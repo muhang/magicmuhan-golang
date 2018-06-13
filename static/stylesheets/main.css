@@ -10,7 +10,6 @@ GENERAL STYLES
 -----------------------------------------------------*/
 
 body {
-	background: #1c303a;
   overflow-x: hidden;
 }
 
@@ -28,47 +27,38 @@ p, li, a {
 }
 
 #wrapper {
-  padding-left: 0;
+  padding-left: 20vw;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
-
-#wrapper.toggled {
-  padding-left: 250px;
 }
 
 #sidebar-wrapper {
   z-index: 1000;
   position: fixed;
-  left: 250px;
-  width: 0;
+  left: 0;
+  width: 20vw;
   height: 100%;
-  margin-left: -250px;
+  /*margin-left: -20vw;*/
   overflow-y: auto;
-  background: #000;
+  background: rgb(11, 19, 23);
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-#wrapper.toggled #sidebar-wrapper {
-  width: 250px;
-}
-
 #page-content-wrapper {
-  width: 100%;
+  width: calc(100% - 20vw);
   position: absolute;
-  padding: 15px;
+  height: 100vh;
 }
 
-#wrapper.toggled #page-content-wrapper {
-  position: absolute;
-  margin-right: -250px;
+#page-content-wrapper > .container-fluid {
+  height: 100%;
+  padding: 0;
 }
-
 
 /*-----------------------------------------------------
 MAIN NAVIGATION
@@ -77,25 +67,102 @@ MAIN NAVIGATION
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 20vw;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.sidebar-nav.sidebar-bottom {
+  top: initial;
+  bottom: 0;
+}
+
 .sidebar-nav li {
-  text-indent: 20px;
   line-height: 40px;
+  padding: 40px 35px;
+  text-align: right;
+  border-right: 0px solid #f4f5f4;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.sidebar-nav li:hover {
+  border-right: 4px solid #f4f5f4;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.sidebar-nav li:hover a {
+  margin-right: 8px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.sidebar-nav li:first-child:hover {
+  border-right: 0px solid #f4f5f4;
+}
+
+.sidebar-nav.sidebar-bottom li:first-child:hover {
+  border-right: 4px solid #f4f5f4;
 }
 
 .sidebar-nav li a {
   display: block;
   text-decoration: none;
-  color: #999999;
+  font-size: 24px;
+	color: #f4f5f4;
+  font-weight: 300;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
-.sidebar-nav li a:hover {
-  text-decoration: none;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.2);
+/*-----------------------------------------------------
+HOME PAGE
+-----------------------------------------------------*/
+
+.center-content h1 {
+  text-align: center;
+  color: #f4f5f4;
+  font-weight: 300;
+  line-height: 200%;
+}
+h1.sm {
+  font-size: 24px;
+}
+
+h1.md {
+  font-size: 32px;
+}
+
+h1.lg {
+  font-size: 42px;
+}
+
+.center-content-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  background-image: url("../images/road.jpg");
+  background-position: center;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 40px 35px;
+	background: rgba(25, 43, 52, 0.75);
 }
