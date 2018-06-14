@@ -222,6 +222,10 @@ h1.lg {
   background-position: center;
 }
 
+.center-content-wrapper.not-found-wrapper {
+  background-image: none;
+}
+
 .center-content {
   display: flex;
   flex-direction: column;
