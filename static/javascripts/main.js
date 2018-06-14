@@ -5,11 +5,9 @@ $(document).ready(function () {
   var workDefaultClass = 'work-default';
 
   function animateSkills() {
-    setTimeout(function () {
-      if ($('#about-wrapper').length) {
-        $('#about-wrapper').addClass('show-section');    
-      }
-    }, 500)
+    if ($('#about-wrapper').length) {
+      $('#about-wrapper').addClass('show-section');    
+    }
   }
 
   function clearWorkSelection() {
