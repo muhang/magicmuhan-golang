@@ -17,6 +17,8 @@ $(document).ready(function () {
     $('#work-section-projects').removeClass(workInactiveClass);
     $('#work-section-jobs').removeClass(workDefaultClass);
     $('#work-section-projects').removeClass(workDefaultClass);
+    $('#work-section-jobs').scrollTop(0);
+    $('#work-section-projects').scrollTop(0);
   }
 
   $.fn.selectSection = function() {

@@ -275,7 +275,7 @@ ABOUT ME
 }
 
 /*-----------------------------------------------------
-SKILL BAR GRAPH
+ABOUT ME - SKILL BAR GRAPH
 -----------------------------------------------------*/
 
 .skills {
@@ -501,6 +501,7 @@ PAST WORK
 
 #work-section-jobs.work-inactive, #work-section-projects.work-inactive {
   height: 80px;
+  overflow-y: hidden;
 }
 
 h1.work-section-title {
@@ -546,6 +547,7 @@ h1.work-section-title {
   font-size: 40px;
   cursor: pointer;
   margin: 0 10vw 60px 10vw;
+  width: calc(100% - 20vw);
 }
 
 .work-inactive h1.work-section-title {
@@ -555,9 +557,9 @@ h1.work-section-title {
   font-size: 32px;
 }
 
-#work-section-jobs.work-selected h1.work-section-title {
-  width: calc(100% - 20vw);
-}
+/*-----------------------------------------------------
+PAST WORK - EMPLOYMENT HISTORY
+-----------------------------------------------------*/
 
 #jobs-content {
   padding: 0 70px;
@@ -591,4 +593,65 @@ p.job-detail-company {
 
 p.job-detail-time, p.job-detail-body {
   font-size: 16px;
+}
+
+/*-----------------------------------------------------
+PAST WORK - PAST PROJECTS
+-----------------------------------------------------*/
+
+#projects-content {
+  padding: 0 90px;
+}
+
+ul.projects-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li.projects-list-item {
+  margin-bottom: 90px;
+}
+
+img.project-img {
+  width: 100%;
+  height: auto;
+}
+
+.project-section {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+p.project-summary-text {
+  color: rgb(11, 19, 23);
+  font-size: 18px;
+  line-height: 180%;
+  text-align: center;
+  margin: auto;
+}
+
+a.project-link {
+  padding: 18px 32px;
+  display: inline-block;
+  border: 2px solid rgb(11, 19, 23);
+  color: rgb(11, 19, 23);
+  letter-spacing: 2px;
+	-webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+a.project-link:hover {
+  color: rgb(11, 19, 23);
+  text-decoration: none;
+	-webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  border-width: 4px;
+  margin-top: -2px;
 }

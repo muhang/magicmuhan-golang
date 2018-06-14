@@ -2,10 +2,43 @@
 
 {{define "body"}}
   <div id="work-wrapper">
-    <div class="row work-section work-default" id="work-section-projects"> 
+    <div class="work-section work-default" id="work-section-projects"> 
       <h1 class="work-section-title">Past Projects</h1>
-      <div id="projects-content" class="col-12">
-      
+      <div id="projects-content">
+        <ul class="projects-list">
+          <li class="projects-list-item">
+            <div class="row">
+              <div class="col-md-6 project-section">
+                <img class="project-img" src="../static/images/roost-dash.png">
+              </div>
+              <div class="col-md-6 project-section">
+                <p class="project-summary-text">Dashboard for Roost application, built using Ember. Primary UI for the Roost system. Responsible for sending notifications, displaying all information relevant to using Roost (sent notifications, user details, billing, etc). Also has advanced audience segmentation UI features, various audience metric data (built using highcharts), and a geolocation targeting UI.</p>
+                <a class="project-link" href="https://dashboard.goroost.com" target="_blank">VISIT SITE</a>
+              </div>
+            </div>
+          </li>
+          <li class="projects-list-item">
+            <div class="row">
+              <div class="col-md-6 project-section">
+                <p class="project-summary-text">Roost website, built using static HTML and Bootstrap. Built exactly according to photoshop mockup made by a (super talented) designer. Also contains pricing slider built using jQuery.</p>
+                <a class="project-link" href="https://goroost.com" target="_blank">VISIT SITE</a>
+              </div>
+              <div class="col-md-6 project-section">
+                <img class="project-img" src="../static/images/roost-site.png">
+              </div>
+            </div>
+          </li>
+          <li class="projects-list-item">
+            <div class="row">
+              <div class="col-md-6 project-section">
+                <img class="project-img" src="../static/images/roost-elixir.png">
+              </div>
+              <div class="col-md-6 project-section">
+                <p class="project-summary-text">Rebuilt entire Roost core in Elixir (previously writtin in Java 7). Leveraged OTP principles and functional programming patterns to create highly parallelized version of our notification sending platform, with 50 - 100x improvement in performance and significant cost reduction.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="work-section work-default" id="work-section-jobs"> 
