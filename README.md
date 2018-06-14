@@ -13,5 +13,4 @@ TODO
 - [x] About Me - skills
 - [ ] Past Work - content
 - [ ] Past Work - style
-- [ ] Contact - frontend
-- [ ] Contact - backend (email delivery & validation)
+- [x] Contact - frontend

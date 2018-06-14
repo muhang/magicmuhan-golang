@@ -9,7 +9,7 @@ import (
 )
 
 var templates = template.Must(template.ParseFiles("templates/index.html"))
-var validPath = regexp.MustCompile("^/(|about|work|contact)$")
+var validPath = regexp.MustCompile("^/(|about|work)$")
 
 func makeHandler(fn func(http.ResponseWriter, *http.Request)) http.HandlerFunc {
   return func(w http.ResponseWriter, r *http.Request) {
@@ -53,10 +53,6 @@ func workHandler(w http.ResponseWriter, r *http.Request) {
   renderTemplate(w, "work")
 }
 
-func contactHandler(w http.ResponseWriter, r *http.Request) {
-  renderTemplate(w, "contact")
-}
-
 func notFoundHandler(w http.ResponseWriter, r *http.Request) {
   renderTemplate(w, "notFound")
 }
@@ -68,7 +64,6 @@ func main() {
   http.HandleFunc("/", makeHandler(indexHandler))
   http.HandleFunc("/about", makeHandler(aboutHandler))
   http.HandleFunc("/work", makeHandler(workHandler))
-  http.HandleFunc("/contact", makeHandler(contactHandler))
   log.Println("Listening...")
   log.Fatal(http.ListenAndServe(":8080", nil))
 }

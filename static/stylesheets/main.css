@@ -113,8 +113,26 @@ MAIN NAVIGATION
   border-right: 0px solid #f4f5f4;
 }
 
+.sidebar-nav.sidebar-bottom li:first-child {
+  padding: 0;
+}
+
 .sidebar-nav.sidebar-bottom li:first-child:hover {
   border-right: 4px solid #f4f5f4;
+}
+
+li#social-list-wrapper {
+  border-bottom: 2px solid #f4f5f4;
+  height: 91px;
+  padding-right: 35px;
+}
+
+li#social-list-wrapper:hover {
+  border-right: 0px solid #f4f5f4;
+}
+
+li#social-list-wrapper:hover a {
+  margin-right: 0;
 }
 
 .sidebar-nav li a {
@@ -128,6 +146,34 @@ MAIN NAVIGATION
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+}
+
+.social-list-icon {
+  display: inline-block;
+  text-align: center;
+  width: 70px;
+}
+
+.social-list-icon a {
+  display: inline;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 !important;
+}
+
+a#linkedin-icon {
+  background-image: url("../images/linkedin.png");
+}
+
+a#github-icon {
+  background-image: url("../images/github.svg");
+}
+
+a#mail-icon {
+  background-image: url("../images/mail.svg");
 }
 
 /*-----------------------------------------------------
@@ -405,3 +451,5 @@ li#sass {
 	padding-right: 58px;
 	top: 35px;
 }
+
+
