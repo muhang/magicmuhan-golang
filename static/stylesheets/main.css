@@ -471,4 +471,124 @@ li#sass {
 	top: 35px;
 }
 
+/*-----------------------------------------------------
+PAST WORK
+-----------------------------------------------------*/
 
+#work-section-jobs, #work-section-projects {
+  height: 50vh;
+  cursor: pointer;
+  overflow-y: scroll;
+	-webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#work-section-jobs {
+  border-top: 1px solid rgb(11, 19, 23);
+}
+
+#work-section-jobs.work-selected, #work-section-projects.work-selected {
+  height: calc(100vh - 80px);
+	-webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: initial;
+  background: #dbdcdb;
+}
+
+#work-section-jobs.work-inactive, #work-section-projects.work-inactive {
+  height: 80px;
+}
+
+h1.work-section-title {
+  line-height: 50vh;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  width: 100%;
+  border-bottom: 0px solid rgb(11, 19, 23);
+	-webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.work-section h1, .work-section:hover h1 {
+	-webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.work-section.work-default:hover h1 {
+  font-size: 48px;
+  background: #dbdcdb;
+}
+
+.work-section.work-selected:hover h1 {
+  font-size: 40px;
+}
+
+.work-section.work-inactive:hover h1 {
+  opacity: 1.0;
+  font-size: 32px;
+}
+
+.work-selected h1.work-section-title {
+  line-height: 120px;
+  height: 120px;
+  border-bottom: 2px solid rgb(11, 19, 23);
+  font-weight: 400;
+  font-size: 40px;
+  cursor: pointer;
+  margin: 0 10vw 60px 10vw;
+}
+
+.work-inactive h1.work-section-title {
+  line-height: 80px;
+  background: #f4f5f4;
+  opacity: 0.3;
+  font-size: 32px;
+}
+
+#work-section-jobs.work-selected h1.work-section-title {
+  width: calc(100% - 20vw);
+}
+
+#jobs-content {
+  padding: 0 70px;
+}
+
+ul.job-details, ul.job-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li.job-item {
+  margin-bottom: 60px;
+}
+
+p.job-detail-text {
+  color: rgb(11, 19, 23);
+  font-size: 18px;
+  line-height: 180%;
+  margin-bottom: 8px;
+}
+
+p.job-detail-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+p.job-detail-company {
+  font-weight: 600;
+}
+
+p.job-detail-time, p.job-detail-body {
+  font-size: 16px;
+}
