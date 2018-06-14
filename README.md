@@ -10,7 +10,7 @@ TODO
 - [x] Basic template structure
 - [x] Landing page
 - [x] About Me - content
-- [ ] About Me - skills
+- [x] About Me - skills
 - [ ] Past Work - content
 - [ ] Past Work - style
 - [ ] Contact - frontend

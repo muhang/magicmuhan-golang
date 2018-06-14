@@ -208,3 +208,200 @@ ABOUT ME
 #about-image img {
   height: 100%;
 }
+
+/*-----------------------------------------------------
+SKILL BAR GRAPH
+-----------------------------------------------------*/
+
+.skills {
+	width: 580px;
+	height: 300px;
+  margin-left: 40px;
+	border-left: 3px solid #0b1317;
+	border-bottom: 3px solid #0b1317;
+  display: inline-block;
+  position: relative;
+}
+
+.bar {
+	position: absolute;
+	width: 30px;
+	bottom: 0%;
+	background: #2b4e59;
+}
+
+.htmlf {
+	left: 55px;
+	height: 0%;
+}
+
+.show-section .htmlf {
+	height: 100%;
+	-webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.cssf {
+	left: 120px;
+	height: 0%;
+}
+
+.show-section .cssf {
+	height: 100%;
+	-webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.jsf {
+	left: 185px;
+	height: 0%;
+}
+
+.show-section .jsf {
+	height: 100%;
+	-webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.phpf {
+  left: 250px;
+  height: 0%;
+}
+
+.show-section .phpf {
+	height: 95%;
+	-webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.wpf {
+	left: 315px;
+	height: 0%;
+}
+
+.show-section .wpf {
+	height: 85%;
+	-webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.jqf {
+	left: 379px;
+	height: 0%;
+}
+
+.show-section .jqf {
+	height: 100%;
+	-webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.ajf {
+	left: 443px;
+	height: 0%;
+}
+
+.show-section .ajf {
+	height: 75%;
+	-webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.sassf {
+	left: 506px;
+	height: 0%;
+}
+
+.show-section .sassf {
+	height: 70%;
+	-webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.skills ul {
+	position: absolute;
+	bottom: -5%;
+	height: 5%;
+	width: 100%;
+}
+
+.skills ul li {
+	display: inline;
+	position: absolute;
+	border-bottom: 1px solid #0b1317;
+	padding-bottom: 5px;
+	-moz-transform:    rotate(-65deg);     
+    -o-transform:      rotate(-65deg);     
+    -webkit-transform: rotate(-65deg);     
+    transform:         rotate(-65deg);
+  padding-right: 40px;
+  z-index: 30;
+}
+
+.skills ul li p {
+	font-size: 16px;
+  line-height: 100%;
+  margin-bottom: 0;
+}
+
+li#html {
+	left: 0px;
+	top: 35px;
+}
+
+li#css {
+	left: 65px;
+	padding-right: 56px;
+	top: 35px;
+}
+
+li#jq {
+	left: 130px;
+	padding-right: 21px;
+	top: 35px;
+}
+
+li#php {
+	left: 195px;
+	padding-right: 60px;
+	top: 35px;
+}
+
+li#wp {
+  left: 259px;
+  top: 35px;
+  padding-right: 43px;
+}
+
+li#js {
+	left: 325px;
+	top: 35px;
+	padding-right: 42px;
+}
+
+li#aj {
+	left: 390px;
+	top: 35px;
+}
+
+li#sass {
+	left: 455px;
+	padding-right: 58px;
+	top: 35px;
+}
