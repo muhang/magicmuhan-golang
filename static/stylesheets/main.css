@@ -53,7 +53,7 @@ p, li, a {
 #page-content-wrapper {
   width: calc(100% - 20vw);
   position: absolute;
-  height: 100vh;
+  height: 100%;
 }
 
 #page-content-wrapper > .container-fluid {
@@ -123,6 +123,7 @@ MAIN NAVIGATION
 
 li#sidebar-title a {
   font-size: 40px;
+  padding-right: 0;
 }
 
 li#social-list-wrapper {
