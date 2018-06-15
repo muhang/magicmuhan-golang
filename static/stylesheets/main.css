@@ -121,6 +121,10 @@ MAIN NAVIGATION
   border-right: 4px solid #f4f5f4;
 }
 
+li#sidebar-title a {
+  font-size: 40px;
+}
+
 li#social-list-wrapper {
   border-bottom: 2px solid #f4f5f4;
   height: 91px;
@@ -254,6 +258,7 @@ ABOUT ME
 
 #about-content {
   padding: 40px 35px;
+  text-align: center;
 }
 
 #about-content h1, #about-content p {
@@ -270,8 +275,14 @@ ABOUT ME
   padding: 40px 35px;  
 }
 
+#about-image {
+  text-align: center;
+  align-self: center;
+}
+
 #about-image img {
-  height: 100%;
+  height: 50vh;
+  border-radius: 50%;
 }
 
 /*-----------------------------------------------------
@@ -658,28 +669,25 @@ a.project-link:hover {
 
 @media screen and (max-width: 1620px) {
   #about-wrapper > .row {
-    display: block; 
+    /*display: block; */
   }
-  .about-section {
-    width: 100%;
-    max-width: 100%;
-  }
+  /*.about-section {*/
+    /*width: 100%;*/
+    /*max-width: 100%;*/
+  /*}*/
   #about-content {
     text-align: center; 
     padding-bottom: 100px;
-  }
-  #about-image img {
-    display: none; 
   }
 }
 
 @media screen and (max-width: 1260px) {
   #sidebar-wrapper {
-    width: 100%;
+    width: 100vw;
     height: 82px;
   }
 
-  #sidebar-wrapper ul, #sidebar-wrapper li, #sidebar-wrapper a, #sidebar-wrapper h1 {
+  #sidebar-wrapper ul, #sidebar-wrapper li, #sidebar-wrapper a {
     display: inline-block !important; 
     padding: 0;
     line-height: 80px;
@@ -734,12 +742,82 @@ a.project-link:hover {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
+  #sidebar-wrapper ul.sidebar-nav.sidebar-bottom {
+    display: none !important; 
+  }
+
+  #sidebar-wrapper ul.sidebar-nav {
+    width: 100%;
+  }
+  
   .skills {
-    -ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Safari */
-    transform: rotate(90deg);
-    margin-top: 140px; 
-    margin-left: 0;
+    -ms-transform: rotate(90deg) scale(0.6); /* IE 9 */
+    -webkit-transform: rotate(90deg) scale(0.6); /* Safari */
+    transform: rotate(90deg) scale(0.6);
+    margin-top: 0; 
+    margin-left: -60%;
+  }
+
+  #about-image img {
+    display: none; 
+  }
+}
+
+@media screen and (max-width: 685px) {
+  li#sidebar-title a {
+    font-size: 22px; 
+  }
+
+  ul.sidebar-nav.sidebar-bottom {
+    right: 10px; 
+  }
+
+  ul.sidebar-nav li {
+    margin: 0 8px; 
+  }
+
+  ul.sidebar-nav li a {
+    font-size: 14px; 
+  }
+
+  #page-content-wrapper {
+    overflow-x: hidden; 
+  }
+
+  #projects-content, #jobs-content {
+    padding: 0 35px;
+  }
+
+  img.project-img {
+    margin-bottom: 35px !important; 
+  }
+
+  .work-default h1.work-section-title {
+    font-size: 32px; 
+  }
+
+  .work-selected h1.work-section-title {
+    font-size: 28px;
+    line-height: 90px;
+    height: 90px; 
+  }
+
+  .work-inactive h1.work-section-title {
+    font-size: 26px; 
+  }
+
+  #work-section-jobs.work-selected h1.work-section-title {
+    font-size: 28px;
+    line-height: 60px;
+    height: 130px; 
+  }
+
+  #about-content h1 {
+    font-size: 32px; 
+  }
+
+  .about-body {
+    padding: 40px 0; 
   }
 }
