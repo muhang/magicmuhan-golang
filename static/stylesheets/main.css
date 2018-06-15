@@ -756,11 +756,15 @@ a.project-link:hover {
     -webkit-transform: rotate(90deg) scale(0.6); /* Safari */
     transform: rotate(90deg) scale(0.6);
     margin-top: 0; 
-    margin-left: -60%;
+    margin-left: -120px;
   }
 
   #about-image img {
     display: none; 
+  }
+
+  .work-section.work-selected:hover h1 {
+    font-size: 28px; 
   }
 }
 
@@ -794,7 +798,7 @@ a.project-link:hover {
   }
 
   .work-default h1.work-section-title {
-    font-size: 32px; 
+    font-size: 28px; 
   }
 
   .work-selected h1.work-section-title {
@@ -804,13 +808,13 @@ a.project-link:hover {
   }
 
   .work-inactive h1.work-section-title {
-    font-size: 26px; 
+    font-size: 28px; 
   }
 
   #work-section-jobs.work-selected h1.work-section-title {
     font-size: 28px;
-    line-height: 60px;
-    height: 130px; 
+    line-height: 90px;
+    height: auto; 
   }
 
   #about-content h1 {
